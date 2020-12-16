@@ -11,7 +11,10 @@ These files will create a VPC, Internet Gateway, 2 public subnets, 2 private sub
 # server-params.json and final-project.yaml
 These files will create a launch configuration, auto scaling group, load balancer, 
 target groups, listeners, an IAM role for the ec2 instances, and the security groups. 
-You can change the parameters by changing the params.json file to fit your needs.
+You can change the parameters by changing the params.json file to fit your needs. 
+
+The user data that is used in the launch configuration will start an apache2 server and
+ download a zip file from s3. This file can be switch to fit your needs accordingly.
 
 # create.sh and update.sh 
 You can use these scripts to create and update your cloudformation stack by adding 
