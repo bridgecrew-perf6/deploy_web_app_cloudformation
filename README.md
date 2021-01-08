@@ -18,4 +18,8 @@ The user data that is used in the launch configuration will start an apache2 ser
 
 # create.sh and update.sh 
 You can use these scripts to create and update your cloudformation stack by adding 
-the stack name, the yaml file, and then the json file that goes with the yaml file
+the stack name, the yaml file, and then the json file that goes with the yaml file like 
+this.
+```
+./create.sh stack-name server.yaml server-params.json
+```
